@@ -1,0 +1,14 @@
+{
+  "name": "wasm-simple-algorithms",
+  "version": "0.0.1",
+  "description": "",
+  "main": "start.js",
+  "scripts": {
+    "test": "node ./node_modules/qunit/bin/qunit.js"
+  },
+  "author": "Volodymyr Korniyko",
+  "license": "MIT",
+  "dependencies": {
+    "qunit": "^2.9.1"
+  }
+}
