@@ -17,6 +17,7 @@ QUnit.test("JS binarySearch test", function (assert) {
 		
 	assert.strictEqual(binarySearch(array2, 9), -1);
 
+	assert.strictEqual(binarySearch(array3, -1), -1);
 	assert.strictEqual(binarySearch(array3, 0), 0);
 	assert.strictEqual(binarySearch(array3, 1), 1);
 	assert.strictEqual(binarySearch(array3, 2), -1);
@@ -55,6 +56,7 @@ QUnit.test("WASM binarySearch test", function (assert) {
 	array3.forEach((element, idx) =>
 		wasmMemoryF64Array[idx] = element);
 
+	assert.strictEqual(binarySearch(array3.length - 1, -1), -1);
 	assert.strictEqual(binarySearch(array3.length - 1, 0), 0);
 	assert.strictEqual(binarySearch(array3.length - 1, 1), 1);
 	assert.strictEqual(binarySearch(array3.length - 1, 2), -1);

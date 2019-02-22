@@ -17,6 +17,7 @@ QUnit.test("JS linearSearch test", function (assert) {
 		
 	assert.strictEqual(linearSearch(array2, 9), -1);
 
+	assert.strictEqual(linearSearch(array3, -1), -1);
 	assert.strictEqual(linearSearch(array3, 0), 0);
 	assert.strictEqual(linearSearch(array3, 1), 1);
 	assert.strictEqual(linearSearch(array3, 2), -1);
@@ -55,6 +56,7 @@ QUnit.test("WASM linearSearch test", function (assert) {
 	array3.forEach((element, idx) =>
 		wasmMemoryF64Array[idx] = element);
 
+	assert.strictEqual(linearSearch(array3.length - 1, -1), -1);
 	assert.strictEqual(linearSearch(array3.length - 1, 0), 0);
 	assert.strictEqual(linearSearch(array3.length - 1, 1), 1);
 	assert.strictEqual(linearSearch(array3.length - 1, 2), -1);
