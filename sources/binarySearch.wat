@@ -19,14 +19,15 @@
 			get_local $end
 			i32.le_s
 			if $loopIf
-				get_local $start
 				get_local $end
+				get_local $start
+				i32.sub
+				i32.const 2
+				i32.div_s
+				get_local $start
 				i32.add
-				i32.const 1
-				i32.shr_u
-				set_local $middle
+				tee_local $middle
 
-				get_local $middle
 				i32.const 8
 				i32.mul
 				f64.load
