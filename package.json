@@ -10,5 +10,9 @@
   "license": "MIT",
   "dependencies": {
     "qunit": "^2.9.1"
+  },
+  "repository": {
+	"type": "git",
+	"url": "https://gitlab.com/vkorniyko/wasm-simple-algorithms.git"
   }
 }
