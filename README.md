@@ -24,7 +24,7 @@ npm test
 
 ## Algorithms
 
-* [Linear Search](sources/linearSearch.wat)
+* [Linear Search (and fast version)](sources/linearSearch.wat)
 * [Binary Search](sources/binarySearch.wat)
 * [Interpolation Search](sources/interpolationSearch.wat)
 * [Bubble Sort](sources/bubbleSort.wat)
