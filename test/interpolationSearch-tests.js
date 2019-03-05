@@ -30,7 +30,7 @@ QUnit.test("JS interpolationSearch test", function (assert) {
 QUnit.test("WASM interpolationSearch test", function (assert) {
 	var importObject = {
 		env: {
-			memory: new WebAssembly.Memory({ initial: 10 })
+			memory: new WebAssembly.Memory({ initial: 1 })
 		}
 	};
 

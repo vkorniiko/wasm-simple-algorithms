@@ -1,5 +1,5 @@
 (module
-	(import "env" "memory" (memory $memory 10))
+	(import "env" "memory" (memory $memory 1))
 	(export "isPrime" (func $isPrime))
 	(export "sieve" (func $sieve))
 	(func $sieve (param $count i32)

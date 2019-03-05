@@ -32,7 +32,7 @@ QUnit.test("JS linearSearch test", function (assert) {
 QUnit.test("WASM linearSearch test", function (assert) {
 	var importObject = {
 		env: {
-			memory: new WebAssembly.Memory({ initial: 10 })
+			memory: new WebAssembly.Memory({ initial: 1 })
 		}
 	};
 
@@ -91,7 +91,7 @@ QUnit.test("JS fastLinearSearch test", function (assert) {
 QUnit.test("WASM fastLinearSearch test", function (assert) {
 	var importObject = {
 		env: {
-			memory: new WebAssembly.Memory({ initial: 10 })
+			memory: new WebAssembly.Memory({ initial: 1 })
 		}
 	};
 

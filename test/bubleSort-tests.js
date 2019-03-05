@@ -32,7 +32,7 @@ QUnit.test("WASM bubbleSort test", function (assert) {
 
 	var importObject = {
 		env: {
-			memory: new WebAssembly.Memory({ initial: 10 })
+			memory: new WebAssembly.Memory({ initial: 1 })
 		}
 	};
 	

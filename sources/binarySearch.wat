@@ -1,5 +1,5 @@
 (module
-	(import "env" "memory" (memory $memory 10))
+	(import "env" "memory" (memory $memory 1))
 	(export "binarySearch" (func $binarySearch))
 	(func $binarySearch (param $end i32) (param $number f64) (result i32)
 		(local $middle i32)

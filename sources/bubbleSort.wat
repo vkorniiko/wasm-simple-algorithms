@@ -1,5 +1,5 @@
 (module
-	(import "env" "memory" (memory $memory 10))
+	(import "env" "memory" (memory $memory 1))
 	(export "bubbleSort" (func $bubbleSort))
 	(func $bubbleSort (param $start i32) (param $end i32)
 		(local $swapped i32) 

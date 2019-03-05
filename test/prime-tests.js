@@ -13,7 +13,7 @@ QUnit.test("JS isPrime test", function (assert) {
 QUnit.test("WASM isPrime test", function (assert) {
 	var importObject = {
 		env: {
-			memory: new WebAssembly.Memory({ initial: 10 })
+			memory: new WebAssembly.Memory({ initial: 1 })
 		}
 	};
 
@@ -33,7 +33,7 @@ QUnit.test("JS sieve test", function (assert) {
 QUnit.test("WASM sieve test", function (assert) {
 	var importObject = {
 		env: {
-			memory: new WebAssembly.Memory({ initial: 10 })
+			memory: new WebAssembly.Memory({ initial: 1 })
 		}
 	};
 
