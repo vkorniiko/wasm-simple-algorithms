@@ -1,8 +1,9 @@
-var isPrime = require('../sources/prime').isPrime;
-var sieve = require('../sources/prime').sieve;
+var requireHelper = require("./_require_helper");
+var isPrime = requireHelper('../source/prime/prime').isPrime;
+var sieve = requireHelper('../source/prime/prime').sieve;
 var readFileSync = require('fs').readFileSync;
 var resolve = require('path').resolve;
-var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/sources/prime.wasm"));
+var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/source/prime/prime.wasm"));
 var primeNumbers = [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
 
 QUnit.test("JS isPrime test", function (assert) {

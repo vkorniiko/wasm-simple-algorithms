@@ -1,8 +1,9 @@
-var linearSearch = require('../sources/linearSearch').linearSearch;
-var fastLinearSearch = require('../sources/linearSearch').fastLinearSearch;
+var requireHelper = require("./_require_helper");
+var linearSearch = requireHelper('../source/linearSearch/linearSearch').linearSearch;
+var fastLinearSearch = requireHelper('../source/linearSearch/linearSearch').fastLinearSearch;
 var readFileSync = require('fs').readFileSync;
 var resolve = require('path').resolve;
-var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/sources/linearSearch.wasm"));
+var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/source/linearSearch/linearSearch.wasm"));
 
 var array1 = [Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER+1, Number.MIN_VALUE, 1,2,3,4,5,6,7,8,10, 11.23443565476587, Number.MAX_SAFE_INTEGER-1, Number.MAX_SAFE_INTEGER];
 var array2 = [10,10,10,10,10];

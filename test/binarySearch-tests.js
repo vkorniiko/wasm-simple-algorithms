@@ -1,7 +1,8 @@
-var binarySearch = require('../sources/binarySearch').binarySearch;
+var requireHelper = require("./_require_helper");
+var binarySearch = requireHelper('../source/binarySearch/binarySearch').binarySearch;
 var readFileSync = require('fs').readFileSync;
 var resolve = require('path').resolve;
-var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/sources/binarySearch.wasm"));
+var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/source/binarySearch/binarySearch.wasm"));
 
 var array1 = [Number.MIN_SAFE_INTEGER, Number.MIN_SAFE_INTEGER+1, Number.MIN_VALUE, 1,2,3,4,5,6,7,8,10, 11.23443565476587, Number.MAX_SAFE_INTEGER-1, Number.MAX_SAFE_INTEGER];
 var array2 = [10,10,10,10,10];

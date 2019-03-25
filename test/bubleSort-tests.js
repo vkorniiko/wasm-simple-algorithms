@@ -1,7 +1,8 @@
-var bubbleSort = require('../sources/bubbleSort').bubbleSort;
+var requireHelper = require("./_require_helper");
+var bubbleSort = requireHelper('../source/bubbleSort/bubbleSort').bubbleSort;
 var readFileSync = require('fs').readFileSync;
 var resolve = require('path').resolve;
-var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/sources/bubbleSort.wasm"));
+var wasmSource = new WebAssembly.Module(readFileSync(resolve() + "/source/bubbleSort/bubbleSort.wasm"));
 var expectedArray1 = [Number.MIN_SAFE_INTEGER,-9,-8,-1,-0.7,0, Number.MIN_VALUE,0.5,2,3,4,5,6,7,234.2546432315765, Number.MAX_SAFE_INTEGER, Number.MAX_VALUE];
 var expectedArray2 = [10,10,10,10];
 var expectedArray3 = [0,1,1,5];
