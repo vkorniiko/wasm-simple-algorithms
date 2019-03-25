@@ -1,18 +1,39 @@
 {
   "name": "wasm-simple-algorithms",
-  "version": "0.0.1",
-  "description": "",
-  "main": "start.js",
+  "version": "0.0.2",
+  "description": "Implementation of the various simple algorithms using WebAssembly.",
+  "main": "",
   "scripts": {
-    "test": "node ./node_modules/qunit/bin/qunit.js"
+    "build": "node ./node_modules/grunt/bin/grunt"
   },
   "author": "Volodymyr Korniyko",
   "license": "MIT",
-  "dependencies": {
-    "qunit": "^2.9.1"
+  "dependencies": {},
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-env": "^0.4.4",
+    "grunt-eslint": "^21.0.0",
+    "grunt-istanbul": "^0.8.0",
+    "grunt-jsdoc": "^2.3.0",
+    "grunt-qunit-node": "^0.1.0",
+    "qunitjs": "^2.4.1"
   },
   "repository": {
-	"type": "git",
-	"url": "https://gitlab.com/vkorniyko/wasm-simple-algorithms.git"
-  }
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/vkorniyko/wasm-simple-algorithms.git"
+  },
+  "keywords": [
+    "WASM",
+    "WebAssembly",
+    "Algorithms"
+  ],
+  "bugs": {
+    "url": "https://gitlab.com/vkorniyko/wasm-simple-algorithms/issues"
+  },
+  "homepage": "https://gitlab.com/vkorniyko/wasm-simple-algorithms#readme"
 }

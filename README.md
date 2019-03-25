@@ -14,23 +14,23 @@ $ cd wasm-simple-algorithms
 $ npm i
 ```
 
-## Tests
+Perform linting (for JavaScript), testing (WASM / JavaScript), code coverage measurement (JavaScript):
 
-Perform tests using node.js and qunit:
+```bash
+$ npm run build
+```
 
-```
-npm test
-```
+The *.wasm files for tests are pre-built. If you want to compile them youself, you can always use [WABT](https://github.com/WebAssembly/wabt).
 
 ## Algorithms
 
-* [Linear Search (and fast version)](sources/linearSearch.wat)
-* [Binary Search](sources/binarySearch.wat)
-* [Interpolation Search](sources/interpolationSearch.wat)
-* [Bubble Sort](sources/bubbleSort.wat)
-* [Factorial](sources/factorial.wat)
-* [Fibonacci Number](sources/fibonacci.wat)
-* [Sieve of Eratosthenes](sources/prime.wat)
+* [Linear Search (and fast version)](source/linearSearch/linearSearch.wat)
+* [Binary Search](source/binarySearch/binarySearch.wat)
+* [Interpolation Search](source/interpolationSearch/interpolationSearch.wat)
+* [Bubble Sort](source/bubbleSort/bubbleSort.wat)
+* [Factorial](source/factorial/factorial.wat)
+* [Fibonacci Number](source/fibonacci/fibonacci.wat)
+* [Sieve of Eratosthenes](source/prime/prime.wat)
 
 ## License
 
