@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node ./node_modules/grunt/bin/grunt"
   },
-  "author": "Volodymyr Korniyko",
+  "author": "Volodymyr Korniiko",
   "license": "MIT",
   "dependencies": {},
   "directories": {
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/vkorniyko/wasm-simple-algorithms.git"
+    "url": "git+ssh://git@gitlab.com/vkorniiko/wasm-simple-algorithms.git"
   },
   "keywords": [
     "WASM",
@@ -33,7 +33,7 @@
     "Algorithms"
   ],
   "bugs": {
-    "url": "https://gitlab.com/vkorniyko/wasm-simple-algorithms/issues"
+    "url": "https://gitlab.com/vkorniiko/wasm-simple-algorithms/issues"
   },
-  "homepage": "https://gitlab.com/vkorniyko/wasm-simple-algorithms#readme"
+  "homepage": "https://gitlab.com/vkorniiko/wasm-simple-algorithms#readme"
 }

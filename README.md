@@ -9,7 +9,7 @@ Implementation of the various simple algorithms using WebAssembly.
 Clone the repository and install the dependencies:
 
 ```bash
-$ git clone https://gitlab.com/vkorniyko/wasm-simple-algorithms.git
+$ git clone https://gitlab.com/vkorniiko/wasm-simple-algorithms.git
 $ cd wasm-simple-algorithms
 $ npm i
 ```
